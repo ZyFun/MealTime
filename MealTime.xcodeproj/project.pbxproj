@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C573E5624E4189200A073F2 /* MealTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C573E5424E4189200A073F2 /* MealTime.xcdatamodeld */; };
+		2C573E5B24E41A3300A073F2 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C573E5724E41A3300A073F2 /* User+CoreDataClass.swift */; };
+		2C573E5C24E41A3300A073F2 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C573E5824E41A3300A073F2 /* User+CoreDataProperties.swift */; };
+		2C573E5D24E41A3300A073F2 /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C573E5924E41A3300A073F2 /* Meal+CoreDataClass.swift */; };
+		2C573E5E24E41A3300A073F2 /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C573E5A24E41A3300A073F2 /* Meal+CoreDataProperties.swift */; };
 		2CEE73A324E290B2003D38E4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE73A224E290B2003D38E4 /* CoreDataStack.swift */; };
 		3585ECD123AB6B7200F49C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585ECD023AB6B7200F49C82 /* AppDelegate.swift */; };
 		3585ECD323AB6B7200F49C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585ECD223AB6B7200F49C82 /* SceneDelegate.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C573E5524E4189200A073F2 /* MealTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealTime.xcdatamodel; sourceTree = "<group>"; };
+		2C573E5724E41A3300A073F2 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2C573E5824E41A3300A073F2 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2C573E5924E41A3300A073F2 /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2C573E5A24E41A3300A073F2 /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2CEE73A224E290B2003D38E4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		3585ECCD23AB6B7200F49C82 /* MealTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MealTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3585ECD023AB6B7200F49C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +49,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C573E5F24E41AC400A073F2 /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2C573E5724E41A3300A073F2 /* User+CoreDataClass.swift */,
+				2C573E5824E41A3300A073F2 /* User+CoreDataProperties.swift */,
+				2C573E5924E41A3300A073F2 /* Meal+CoreDataClass.swift */,
+				2C573E5A24E41A3300A073F2 /* Meal+CoreDataProperties.swift */,
+			);
+			path = "CoreData Entities";
+			sourceTree = "<group>";
+		};
 		3585ECC423AB6B7200F49C82 = {
 			isa = PBXGroup;
 			children = (
+				2C573E5F24E41AC400A073F2 /* CoreData Entities */,
 				3585ECCF23AB6B7200F49C82 /* MealTime */,
 				3585ECCE23AB6B7200F49C82 /* Products */,
 			);
@@ -66,6 +88,7 @@
 				3585ECD923AB6B7400F49C82 /* Assets.xcassets */,
 				3585ECDB23AB6B7400F49C82 /* LaunchScreen.storyboard */,
 				3585ECDE23AB6B7400F49C82 /* Info.plist */,
+				2C573E5424E4189200A073F2 /* MealTime.xcdatamodeld */,
 			);
 			path = MealTime;
 			sourceTree = "<group>";
@@ -143,8 +166,13 @@
 			files = (
 				3585ECD523AB6B7200F49C82 /* ViewController.swift in Sources */,
 				3585ECD123AB6B7200F49C82 /* AppDelegate.swift in Sources */,
+				2C573E5B24E41A3300A073F2 /* User+CoreDataClass.swift in Sources */,
+				2C573E5C24E41A3300A073F2 /* User+CoreDataProperties.swift in Sources */,
 				3585ECD323AB6B7200F49C82 /* SceneDelegate.swift in Sources */,
+				2C573E5E24E41A3300A073F2 /* Meal+CoreDataProperties.swift in Sources */,
 				2CEE73A324E290B2003D38E4 /* CoreDataStack.swift in Sources */,
+				2C573E5D24E41A3300A073F2 /* Meal+CoreDataClass.swift in Sources */,
+				2C573E5624E4189200A073F2 /* MealTime.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C573E5424E4189200A073F2 /* MealTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C573E5524E4189200A073F2 /* MealTime.xcdatamodel */,
+			);
+			currentVersion = 2C573E5524E4189200A073F2 /* MealTime.xcdatamodel */;
+			path = MealTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3585ECC523AB6B7200F49C82 /* Project object */;
 }
